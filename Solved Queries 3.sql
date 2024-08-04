@@ -281,3 +281,12 @@ INNER JOIN Products p ON o.product_id = p.product_id
 WHERE order_date >= '2020-02-01' AND order_date <= '2020-02-29'
 GROUP BY p.product_name
 HAVING SUM(o.unit) >= 100;
+
+--Write a solution to find the users who have valid emails.
+--A valid e-mail has a prefix name and a domain where:
+--The prefix name is a string that may contain letters (upper or lower case), digits, underscore '_', period '.', and/or dash '-'. The prefix name must start with a letter.
+--The domain is '@leetcode.com'.
+--Return the result table in any order.
+SELECT *
+FROM Users
+WHERE mail ~ '^[a-zA-Z]+[a-zA-Z0-9_.-]*@leetcode\.com$';
