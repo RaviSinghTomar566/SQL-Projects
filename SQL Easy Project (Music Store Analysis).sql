@@ -1,4 +1,4 @@
---Easy-- 
+---Easy-- 
 --Q1--Who is the senior most employee based on the job title?
 SELECT levels, employee_id, first_name, last_name, title
 FROM employee
