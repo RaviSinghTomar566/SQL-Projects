@@ -1,4 +1,4 @@
---Moderate--
+---Moderate--
 --Write a query to return the email, first name, last name and genre of all rock music listeners.
 --Return the list ordered alphabetically by email starting with A.
 SELECT customer.customer_id, customer.email, customer.first_name, customer.last_name, 
